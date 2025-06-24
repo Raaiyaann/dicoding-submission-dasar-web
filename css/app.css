@@ -54,9 +54,10 @@ header.navbar-container .nav-list li a:hover {
   background-color: #c5a880;
   color: #f5f5f5;
 }
-.logo-title > h1 {
+.logo-title h1 a {
   width: 190px;
   color: #3b2f2f;
+  text-decoration: none;
 }
 
 main {
@@ -78,7 +79,9 @@ main .content {
   align-items: center;
 }
 main .content .content-deskripsi {
-  flex: 1 1;
+  width: 100%;
+  padding:1rem 10rem 1rem 1rem;
+  max-width: 1100px;
 }
 main .content .content-deskripsi .title {
   margin-block: 1rem;
@@ -88,7 +91,8 @@ main .content .content-deskripsi p {
   font-size: 1.2rem;
   line-height: 2rem;
   color: #3b2f2f;
-  font-weight: 500;
+  font-weight: 600;
+  text-align: justify;
 }
 main .content .content-deskripsi button {
   padding: 0.8rem 2.5rem;
@@ -155,3 +159,54 @@ main aside .social-media li a {
 main aside .social-media li a:hover {
   color: #c5a880;
 }
+
+ .menu {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  margin-inline: auto;
+  padding: 6rem 5rem;
+  align-items: center;
+}
+.menu-container{
+  width: 100%;
+}
+.title-menu{
+  width: 100%;
+  text-align: center;
+  color: #3b2f2f;
+  font-size: 1.5rem;
+}
+.menu-content {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.menu-content > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 280px;
+}
+
+.menu-content img {
+  width: 290px;
+  height: 250px;
+  padding: 1.5rem;
+}
+
+.menu-content h3 {
+  margin-bottom: 0.5rem;
+  color: #3b2f2f;
+}
+
+.menu-content p {
+  color: #3b2f2f;
+  font-size: 0.95rem;
+}
+
+
