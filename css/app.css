@@ -10,7 +10,6 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  position: relative;
   min-height: 100vh;
 }
 
@@ -86,26 +85,29 @@ header.navbar-container .nav-list li a:hover {
   transform: translateY(-2px);
 }
 
+/* Main Content */
 main {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  position: relative;
 }
 
-main .content {
+/* Hero Section */
+.hero .content {
   display: flex;
   align-items: center;
   gap: 3rem;
   margin-bottom: 4rem;
 }
 
-main .content .content-deskripsi {
+.hero .content .content-deskripsi {
   flex: 1;
   max-width: 600px;
 }
 
-main .content .content-deskripsi .title {
+.hero .content .content-deskripsi .title {
   margin: 0 0 1.5rem 0;
   font-size: 3rem;
   line-height: 1.2;
@@ -113,7 +115,7 @@ main .content .content-deskripsi .title {
   font-weight: 700;
 }
 
-main .content .content-deskripsi p {
+.hero .content .content-deskripsi p {
   font-size: 1.1rem;
   line-height: 1.8;
   color: #3b2f2f;
@@ -122,7 +124,7 @@ main .content .content-deskripsi p {
   margin-bottom: 2rem;
 }
 
-main .content .content-deskripsi button {
+.hero .content .content-deskripsi button {
   padding: 1rem 2.5rem;
   border: 3px solid transparent;
   border-radius: 50px;
@@ -136,20 +138,20 @@ main .content .content-deskripsi button {
   transition: all 0.3s ease;
 }
 
-main .content .content-deskripsi button:hover {
+.hero .content .content-deskripsi button:hover {
   border: 3px solid #3e7c59;
   background-color: transparent;
   color: #3e7c59;
   transform: translateY(-2px);
 }
 
-main .content .content-image {
+.hero .content .content-image {
   flex: 1;
   display: flex;
   justify-content: center;
 }
 
-main .content .content-image img {
+.hero .content .content-image img {
   width: 100%;
   max-width: 400px;
   height: 500px;
@@ -158,15 +160,16 @@ main .content .content-image img {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Barista Spotlight Aside Styling */
-aside {
+/* Barista Spotlight Aside */
+main aside {
   position: absolute;
-  top: 0;
+  bottom: 76%;
   right: 0;
   z-index: 1000;
+  left:98%;
 }
 
-aside .barista-spotlight {
+main aside .barista-spotlight {
   background: linear-gradient(135deg, #3e7c59 0%, #2d5a42 100%);
   color: #efe6dd;
   padding: 1.5rem;
@@ -175,7 +178,7 @@ aside .barista-spotlight {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 0;
   box-shadow: -5px 5px 25px rgba(0, 0, 0, 0.3);
-  width: 200px;
+  width: 190px;
   font-family: "Merriweather", serif;
   text-align: center;
   border-left: 2px solid rgba(197, 168, 128, 0.3);
@@ -183,7 +186,7 @@ aside .barista-spotlight {
   backdrop-filter: blur(10px);
 }
 
-aside .barista-spotlight img {
+main aside .barista-spotlight img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -194,12 +197,12 @@ aside .barista-spotlight img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-aside .barista-spotlight img:hover {
+main aside .barista-spotlight img:hover {
   transform: scale(1.05);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
 }
 
-aside .barista-spotlight h3 {
+main aside .barista-spotlight h3 {
   margin: 0 0 0.5rem 0;
   font-size: 1.2rem;
   color: #c5a880;
@@ -208,7 +211,7 @@ aside .barista-spotlight h3 {
   letter-spacing: 1px;
 }
 
-aside .barista-spotlight h4 {
+main aside .barista-spotlight h4 {
   margin: 0 0 0.8rem 0;
   font-size: 1.5rem;
   color: #efe6dd;
@@ -216,7 +219,7 @@ aside .barista-spotlight h4 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-aside .barista-spotlight p {
+main aside .barista-spotlight p {
   margin: 0 0 1rem 0;
   font-size: 0.9rem;
   line-height: 1.6;
@@ -224,7 +227,7 @@ aside .barista-spotlight p {
   font-style: italic;
 }
 
-aside .barista-spotlight .specialty {
+main aside .barista-spotlight .specialty {
   background: rgba(197, 168, 128, 0.2);
   padding: 0.6rem 1rem;
   border-radius: 25px;
@@ -234,14 +237,12 @@ aside .barista-spotlight .specialty {
   border: 1px solid rgba(197, 168, 128, 0.4);
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  margin-top: 1rem;
 }
 
+/* Menu Section */
 .menu {
   width: 100%;
-  max-width: 1200px;
-  margin: 4rem auto 0;
-  padding: 0 2rem;
+  margin: 4rem 0 0 0;
 }
 
 .menu-container {
@@ -317,6 +318,7 @@ aside .barista-spotlight .specialty {
   margin: 0;
 }
 
+/* Footer */
 .footer {
   background-color: #3b2f2f;
   color: #efe6dd;
@@ -333,11 +335,11 @@ aside .barista-spotlight .specialty {
   gap: 3rem;
 }
 
-/* Footer Columns */
 .footer-column {
   display: flex;
   flex-direction: column;
 }
+
 .footer-column h3 {
   color: #c5a880;
   font-size: 1.75rem;
@@ -362,7 +364,6 @@ aside .barista-spotlight .specialty {
   max-width: 300px;
 }
 
-/* Menu Links */
 .footer-column ul {
   list-style: none;
   padding: 0;
@@ -391,7 +392,6 @@ aside .barista-spotlight .specialty {
   transform: translateX(5px);
 }
 
-/* Social Media */
 .footer-social {
   display: flex;
   gap: 1rem;
@@ -420,7 +420,6 @@ aside .barista-spotlight .specialty {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer Bottom */
 .footer-bottom {
   text-align: center;
   margin-top: 2.5rem;
@@ -465,39 +464,18 @@ aside .barista-spotlight .specialty {
 
   main {
     padding: 1rem;
-  }
-
-  main .content {
+    display: flex;
     flex-direction: column;
-    gap: 2rem;
   }
 
-  main .content .content-image {
-    order: -1;
-  }
-
-  main .content .content-deskripsi .title {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-
-  main .content .content-deskripsi p {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  main .content .content-deskripsi {
-    text-align: center;
-  }
-
-  aside {
+  main aside {
     position: static;
+    order: -1;
     width: 100%;
-    padding: 1rem;
-    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
 
-  aside .barista-spotlight {
+  main aside .barista-spotlight {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
@@ -507,22 +485,49 @@ aside .barista-spotlight .specialty {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   }
 
-  aside .barista-spotlight img {
+  main aside .barista-spotlight img {
     width: 80px;
     height: 80px;
   }
 
-  aside .barista-spotlight h3 {
+  main aside .barista-spotlight h3 {
     font-size: 1.1rem;
   }
 
-  aside .barista-spotlight h4 {
+  main aside .barista-spotlight h4 {
     font-size: 1.3rem;
   }
 
+  .hero {
+    order: 1;
+  }
+
+  .hero .content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .hero .content .content-image {
+    order: -1;
+  }
+
+  .hero .content .content-deskripsi .title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .hero .content .content-deskripsi p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .hero .content .content-deskripsi {
+    text-align: center;
+  }
+
   .menu {
-    margin-top: 6rem;
-    padding: 0 1rem;
+    order: 2;
+    margin-top: 2rem;
   }
 
   .title-menu h1 {
@@ -546,7 +551,7 @@ aside .barista-spotlight .specialty {
 }
 
 @media screen and (max-width: 480px) {
-  main .content .content-deskripsi .title {
+  .hero .content .content-deskripsi .title {
     font-size: 2rem;
   }
 
@@ -558,25 +563,21 @@ aside .barista-spotlight .specialty {
     font-size: 1.5rem;
   }
 
-  aside {
-    padding: 0.5rem;
-  }
-
-  aside .barista-spotlight {
+  main aside .barista-spotlight {
     font-size: 0.9rem;
     padding: 1rem;
   }
 
-  aside .barista-spotlight img {
+  main aside .barista-spotlight img {
     width: 70px;
     height: 70px;
   }
 
-  aside .barista-spotlight h3 {
+  main aside .barista-spotlight h3 {
     font-size: 1rem;
   }
 
-  aside .barista-spotlight h4 {
+  main aside .barista-spotlight h4 {
     font-size: 1.2rem;
   }
 
