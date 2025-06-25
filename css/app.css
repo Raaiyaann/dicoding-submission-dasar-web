@@ -553,6 +553,7 @@
   @media screen and (max-width: 480px) {
     .hero .content .content-deskripsi .title {
       font-size: 2rem;
+      text-align: center;
     }
 
     header.navbar-container .logo img {
