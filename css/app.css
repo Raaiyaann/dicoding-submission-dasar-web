@@ -16,7 +16,7 @@
   header.navbar-container {
     width: 100%;
     max-width: 1200px;
-    padding: 1rem 2rem;
+    padding: 1rem 3rem 2rem 0px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -179,7 +179,7 @@
     border-bottom-right-radius: 0;
     box-shadow: -5px 5px 25px rgba(0, 0, 0, 0.3);
     width: 190px;
-    font-family: "Merriweather", serif;
+    font-family: "Libre Baskerville", serif;
     text-align: center;
     border-left: 2px solid rgba(197, 168, 128, 0.3);
     border-bottom: 2px solid rgba(197, 168, 128, 0.3);
@@ -279,7 +279,7 @@
   .menu-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    gap: 4rem;
     text-align: center;
   }
 
@@ -297,9 +297,8 @@
   }
 
   .menu-content img {
-    width: 200px;
+    width: 220px;
     height: 200px;
-    object-fit: cover;
     border-radius: 15px;
     margin-bottom: 1rem;
   }
